@@ -1,0 +1,8 @@
+<?php
+$myfile = fopen("Suryaa.txt", "w") or die("Unable to open file!");
+$txt = "good evening ma'am\n";
+fwrite($myfile, $txt);
+$txt = "Please give attendence\n";
+fwrite($myfile, $txt);
+fclose($myfile);
+?>
