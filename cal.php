@@ -1,4 +1,5 @@
  <?php
+ echo "devina dugar"."<br>"."demonstrating OOPS methodology"."<br>";
  class cal
  {
  public $a,$b,$c;

@@ -6,14 +6,14 @@
 <h2> devina dugar</h2>
 <h3> demonstrating downloading image file </h3> 
 <H2> Download file from here:</H2>
-<a href=" download.php?file=download(1).jpg"> CLICK HERE</a>
+<a href="download.php?file=download(1).jpg"> CLICK HERE</a>
 </body>
 </html>
 <?php
-if (empty($_GET[ 'file']))
+if (!empty($_GET[ 'file']))
 {
-$filename = basename($_GET['file']);
-$filepath='destination/'.$filename;
+$filename=basename($_GET['file']);
+$filepath='C:\xampp\htdocs\SEM2\download(1).jpg'.$filename;
 if(!empty($filename) && file_exists($filepath)){
 //Define Headers
 

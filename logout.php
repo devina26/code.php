@@ -1,7 +1,8 @@
 <?php
-   session_start();
-   unset($_SESSION["username"]);
-   unset($_SESSION["password"]);
-   
-   header('Refresh: 2; URL = login.php');
+    session_start();
+    // Destroy session
+    if(session_destroy()) {
+        // Redirecting To Home Page
+        header("Location: login.php");
+    }
 ?>
